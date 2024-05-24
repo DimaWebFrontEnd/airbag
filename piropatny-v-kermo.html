@@ -31,13 +31,10 @@
             <i class="bi bi-info-circle"></i>
             <h1>Про нас</h1>
          </a>
-
          <a href="delivery.html" class="delivery">
             <i class="bi bi-truck"></i>
             <h1>Доставка і оплата</h1>
          </a>
-
-
       </section>
    </header>
    
@@ -62,7 +59,7 @@
                   <a href="autopidbir-usa.html"><li>Замовити автомобіль зі США</li></a>
                   <a href="autopidbir-ukraine.html"><li>Вибрати авто по Україні</li></a>
                   <a href="remont-airbag.html"><li>Послуги по відновленню авто</li></a>
-                  <li class="social__media"><a href="viber://add?number=380963630876"><i class="fa-brands fa-viber"></i></a><a href="https://t.me/+380963630876"><i class="fa-brands fa-telegram"></i></a><a href="https://www.instagram.com/koliakashchenko?igsh=MWFybmdkbnB6bGszdw=="><i class="fa-brands fa-instagram"></i></a></li>
+                  <li class="social__media"><a href="viber://add?number=380963630876"><i class="fa-brands fa-viber"></i></a><a href="https://t.me/+380963630876"><i class="fa-brands fa-telegram"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                   <li class="tel"><i class="fa-solid fa-phone-volume"></i> +380963630876</li>
                   <li class="email"><i class="fa-regular fa-envelope"></i> carsafe-ua@gmail.com</li>
                </ul>
@@ -109,20 +106,18 @@
    </header>
 
    <main>
-      
+      <section class="viber">
+         <div class="viber__wrap">
+            <a href="viber://add?number=380963630876">
+               <i class="fa-brands fa-viber"></i>
+                <div class="viber__message"></div>
+            </a>
+         </div>
+     </section>
 
-      <div class="main__page">
+      <section class="main__page">
 
-         <section class="viber">
-            <div class="viber__wrap">
-               <a href="viber://add?number=380963630876">
-                  <i class="fa-brands fa-viber"></i>
-                   <div class="viber__message"></div>
-               </a>
-            </div>
-        </section>
-
-        <section class="cart__menu">
+         <section class="cart__menu">
             <div class="menu__container">
                <div class="menu__container--close">
                   <h1>Товари у кошику</h1>
@@ -153,168 +148,29 @@
                <button onclick="closeCart()" class="menu__container--continue">Продовжити покупки</button>
             </div>
         </section>
-
-         <section class="main__banner">
-            <img src="images/main-page/photo_2024-05-08_13-45-34.jpg" alt="Подушки безпеки - airbag">
+         <!-- Banner -->
+         <div class="main__banner" style="height: 300px;">
+            <img src="images/main-page/replacement-steering-wheels_0.jpg" alt="">
             <div class="main__banner--sub">
-               <h1>Допомога при підборі</h1>
-               <h1>Оригінальні піропатрони</h1>
-               <h1>Гарантія якості</h1>
+               <h1 style="font-size: 2rem;">Піропатрони в кермо</h1>
             </div>
-         </section>
+         </div>
+        <!--  -->
+         <div class="recomendations">
+            <h1 class="products__h1">Піропатрони в кермо</h1>
+            <div class="recomendations__products"></div>
 
-         <section class="recomendations">
-
-            <h1>Рекомендовані товари</h1>
-            <div class="recomendations__products">
-              <!--  <div class="recomendations__products--about">
-                  <figure>
-                     <img src="images/main-page/products-recomend/20210513.jpg" alt="">
-                  </figure>
-                  <p>Піропатрон у кермо WH-28A <span style="white-space: nowrap;">(верх ⬆Ø 59)</span> <span>(низ↓Ø62)</span> <span>(висота.⇅35)</span> <span>(між. болт. 60)</span></p>
-                  <h3 class="price">1000грн</h3>
-                  <button>Купити <i class="bi bi-cart-plus"></i></button>
-               </div>
-               <div class="recomendations__products--about">
-                  <figure>
-                     <img src="images/main-page/products-recomend/20210511_163033-450x450.jpg" alt="">
-                  </figure>
-                  <p>Піропатрон у кермо WH-28A <span style="white-space: nowrap;">(верх ⬆Ø 59)</span> <span>(низ↓Ø62)</span> <span>(висота.⇅35)</span> <span>(між. болт. 60)</span></p>
-                  <h3 class="price">1000грн</h3>
-                  <button>Купити <i class="bi bi-cart-plus"></i></button>
-               </div>
-               <div class="recomendations__products--about">
-                  <figure>
-                     <img src="images/main-page/products-recomend/18-49-121-300x300.jpg" alt="">
-                  </figure>
-                  <p>Сидіння 20*110</p>
-                  <h3 class="price">800грн</h3>
-                  <button>Купити <i class="bi bi-cart-plus"></i></button>
-               </div>
-               <div class="recomendations__products--about">
-                  <figure>
-                     <img src="images/main-page/products-recomend/450x450.jpg" alt="">
-                  </figure>
-                  <p>пулька MGG-27</p>
-                  <h3 class="price">190грн</h3>
-                  <button>Купити <i class="bi bi-cart-plus"></i></button>
-               </div> -->
-            </div>
-         </section>
-
-
-      <section class="marks__wrap">
-         <!-- Slider main container -->
-<div class="swiper">
-   <!-- Additional required wrapper -->
-   <div class="swiper-wrapper">
-     <!-- Slides -->
-     <div class="swiper-slide"><img src="images/main-page/car-marks/audi.webp" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/bmw.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/chrysler.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/dodge.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/ford.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/honda.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/hyndai.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/infiniti.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/jeep.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/kia.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/lexus.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/mazda.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/mercedez.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/subaru.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/toyota.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/volkswagen.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/сhevrolet.png" alt=""></div>
-     
-    
-   </div>
-   <!-- If we need pagination -->
-   <div class="swiper-pagination"></div>
- 
-   <!-- If we need navigation buttons -->
-   <!-- <div class="swiper-button-prev"></div>
-   <div class="swiper-button-next"></div> -->
- 
-   <!-- If we need scrollbar -->
-   <!-- <div class="swiper-scrollbar"></div> -->
- </div>
+         </div>
+        
       </section>
-         
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-   <script>
-      const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  slidesPerView: 6,
-               spaceBetween: 5,
-           breakpoints: {
-                  // when window width is >= 320px
-                  200: {
-                     slidesPerView: 1,
-                     spaceBetween: 10,
-                  },
-                  350: {
-                     slidesPerView: 1,
-                     spaceBetween: 10,
-                  },
-                  400: {
-                     slidesPerView: 3,
-                     spaceBetween: 40,
-                  },
-                  650: {
-                     slidesPerView: 4,
-                     spaceBetween: 20,
-                  },
-                  850: {
-                     slidesPerView: 5,
-                     spaceBetween: 40,
-                  },
-                  // when window width is >= 480px
-                  1000: {
-                     slidesPerView: 6,
-                     spaceBetween: 40
-                  },
-                  1200: {
-                     slidesPerView: 6,
-                     spaceBetween: 70
-                  },
-                  1400: {
-                     slidesPerView: 6,
-                     spaceBetween: 110
-                  },
+      <section class="about__service">
+         <h1>Якісні піропатрони для керма</h1><br>
+         <p>Місце водія – найнебезпечніше в автомобілі, тому подушки безпеки стали встановлювати насамперед в рульову колонку. Вони є навіть в досить старих моделях авто, що роз'їжджають Вінницею та Україною, і саме їх піропатрони найчастіше потребують заміни.</p><br>
+         <p>Адже для того, щоб водійський пристрій, який знаходиться в кермі, вчасно розкрився, газогенератор має встигнути наповнити оболонку. Піротехнічний патрон, який забезпечує виробіток газу, пристрій одноразовий, тому після спрацьовування потребує обов'язкової заміни. Також заміна проводиться з метою профілактики, після закінчення терміну придатності, при виході з ладу з різних причин.</p><br>
+         <p>Водійський газогенератор для керма потрібно оглядати не рідше, ніж 1 раз на 7 років. А гарантійний термін служби, встановлений виробником, становить від 10 до 15 років. Але якщо автоматика сигналізує про несправності, обережний водій одразу ж вирушає до автосервісу, адже ціна ігнорування такої поломки – власне життя.</p>
+      </section>
 
-               }, 
-  autoplay: {
-   delay: 1500,
-   disableOnInteraction: false,
-  },
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-});
-   </script>
-
-         <section class="main__bottom">
-            
-               <img src="images/main-page/12.jpg" alt="">
-               <div class="main__bottom--sub">
-                  <h1>Доставка авто з аукціонів США та Канади</h1>
-               </div>
-           
-         </section>
-      </div>
    </main>
    <footer>
       <section class="footer__wrap">
@@ -330,7 +186,7 @@
                   <p>+380963630876</p>
                   <a href="viber://add?number=380963630876"><i class="fa-brands fa-viber"></i></a>
                   <a href="https://t.me/+380963630876"><i class="fa-brands fa-telegram"></i></a>
-                  <a href="https://www.instagram.com/koliakashchenko?igsh=MWFybmdkbnB6bGszdw=="><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
                </div>
             </div>
          </div>

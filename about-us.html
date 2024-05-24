@@ -15,6 +15,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
    <script defer src="script/main.js"></script>
+   <script defer src="script/faq.js"></script>
 </head>
 <body>
    <header class="header__top">
@@ -31,13 +32,10 @@
             <i class="bi bi-info-circle"></i>
             <h1>Про нас</h1>
          </a>
-
          <a href="delivery.html" class="delivery">
             <i class="bi bi-truck"></i>
             <h1>Доставка і оплата</h1>
          </a>
-
-
       </section>
    </header>
    
@@ -62,7 +60,7 @@
                   <a href="autopidbir-usa.html"><li>Замовити автомобіль зі США</li></a>
                   <a href="autopidbir-ukraine.html"><li>Вибрати авто по Україні</li></a>
                   <a href="remont-airbag.html"><li>Послуги по відновленню авто</li></a>
-                  <li class="social__media"><a href="viber://add?number=380963630876"><i class="fa-brands fa-viber"></i></a><a href="https://t.me/+380963630876"><i class="fa-brands fa-telegram"></i></a><a href="https://www.instagram.com/koliakashchenko?igsh=MWFybmdkbnB6bGszdw=="><i class="fa-brands fa-instagram"></i></a></li>
+                  <li class="social__media"><a href="viber://add?number=380963630876"><i class="fa-brands fa-viber"></i></a><a href="https://t.me/+380963630876"><i class="fa-brands fa-telegram"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                   <li class="tel"><i class="fa-solid fa-phone-volume"></i> +380963630876</li>
                   <li class="email"><i class="fa-regular fa-envelope"></i> carsafe-ua@gmail.com</li>
                </ul>
@@ -109,20 +107,18 @@
    </header>
 
    <main>
-      
+      <section class="viber">
+         <div class="viber__wrap">
+            <a href="viber://add?number=380963630876">
+               <i class="fa-brands fa-viber"></i>
+                <div class="viber__message"></div>
+            </a>
+         </div>
+     </section>
 
-      <div class="main__page">
+      <section class="main__page">
 
-         <section class="viber">
-            <div class="viber__wrap">
-               <a href="viber://add?number=380963630876">
-                  <i class="fa-brands fa-viber"></i>
-                   <div class="viber__message"></div>
-               </a>
-            </div>
-        </section>
-
-        <section class="cart__menu">
+         <section class="cart__menu">
             <div class="menu__container">
                <div class="menu__container--close">
                   <h1>Товари у кошику</h1>
@@ -130,20 +126,7 @@
                </div>
                
                <div id="menuCart">
-                  <!-- <div class="menu__container--products">
-                     <figure>
-                        <img src="images/main-page/products-recomend/20210511_163033-450x450.jpg" alt="">
-
-                     </figure>
-                     <p>Піропатрон у кермо WH-28A (верх ⬆Ø 59) (низ↓Ø62) (висота.⇅35) (між. болт. 60)</p>
-                  </div>
-                  <div class="menu__container--products">
-                     <figure>
-                        <img src="images/main-page/products-recomend/20210511_163033-450x450.jpg" alt="">
-
-                     </figure>
-                     <p>Піропатрон у кермо WH-28A (верх ⬆Ø 59) (низ↓Ø62) (висота.⇅35) (між. болт. 60)</p>
-                  </div> -->
+                 
                </div>
                   
 
@@ -154,167 +137,63 @@
             </div>
         </section>
 
-         <section class="main__banner">
-            <img src="images/main-page/photo_2024-05-08_13-45-34.jpg" alt="Подушки безпеки - airbag">
+         <!-- Banner -->
+         <div class="main__banner" style="height: 300px;">
+            <img src="images/main-page/cut_with_airbags.webp" alt="">
             <div class="main__banner--sub">
-               <h1>Допомога при підборі</h1>
-               <h1>Оригінальні піропатрони</h1>
-               <h1>Гарантія якості</h1>
+               <h1 style="font-size: 2rem;">Про компанію CARSAFE</h1>
             </div>
-         </section>
+         </div>
+       
+         <section class="about__company">
+            <h1>ПРО КОМПАНІЮ CARSAFE</h1><br>
+<p>Сучасний сервісний центр <span>CARSAFE</span> у м. Вінниця, вже тривалий час займається наданням послуг з якісного ремонту системи безпеки SRS та перетяжки деталей салонів автомобілів. За роки своєї діяльності ми досягли високого професіоналізму у своїй сфері і завоювали довіру клієнтів не лише з Вінниці, а й з усієї території України.<p><br>
 
-         <section class="recomendations">
+<p>Всі наші дії спрямовані на те, щоб нашим клієнтам було зручно звернутися до сервісного центру <span>CARSAFE</span>, а виконані нами роботи відповідали найвищим стандартам.<p><br>
 
-            <h1>Рекомендовані товари</h1>
-            <div class="recomendations__products">
-              <!--  <div class="recomendations__products--about">
-                  <figure>
-                     <img src="images/main-page/products-recomend/20210513.jpg" alt="">
-                  </figure>
-                  <p>Піропатрон у кермо WH-28A <span style="white-space: nowrap;">(верх ⬆Ø 59)</span> <span>(низ↓Ø62)</span> <span>(висота.⇅35)</span> <span>(між. болт. 60)</span></p>
-                  <h3 class="price">1000грн</h3>
-                  <button>Купити <i class="bi bi-cart-plus"></i></button>
-               </div>
-               <div class="recomendations__products--about">
-                  <figure>
-                     <img src="images/main-page/products-recomend/20210511_163033-450x450.jpg" alt="">
-                  </figure>
-                  <p>Піропатрон у кермо WH-28A <span style="white-space: nowrap;">(верх ⬆Ø 59)</span> <span>(низ↓Ø62)</span> <span>(висота.⇅35)</span> <span>(між. болт. 60)</span></p>
-                  <h3 class="price">1000грн</h3>
-                  <button>Купити <i class="bi bi-cart-plus"></i></button>
-               </div>
-               <div class="recomendations__products--about">
-                  <figure>
-                     <img src="images/main-page/products-recomend/18-49-121-300x300.jpg" alt="">
-                  </figure>
-                  <p>Сидіння 20*110</p>
-                  <h3 class="price">800грн</h3>
-                  <button>Купити <i class="bi bi-cart-plus"></i></button>
-               </div>
-               <div class="recomendations__products--about">
-                  <figure>
-                     <img src="images/main-page/products-recomend/450x450.jpg" alt="">
-                  </figure>
-                  <p>пулька MGG-27</p>
-                  <h3 class="price">190грн</h3>
-                  <button>Купити <i class="bi bi-cart-plus"></i></button>
-               </div> -->
-            </div>
-         </section>
+<p>Тому ми з упевненістю можемо стверджувати, що співпраця з нами буде для вас комфортною та взаємовигідною, і підкріплюємо це такими доказами: <br><br>
 
-
-      <section class="marks__wrap">
-         <!-- Slider main container -->
-<div class="swiper">
-   <!-- Additional required wrapper -->
-   <div class="swiper-wrapper">
-     <!-- Slides -->
-     <div class="swiper-slide"><img src="images/main-page/car-marks/audi.webp" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/bmw.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/chrysler.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/dodge.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/ford.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/honda.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/hyndai.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/infiniti.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/jeep.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/kia.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/lexus.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/mazda.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/mercedez.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/subaru.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/toyota.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/volkswagen.png" alt=""></div>
-     <div class="swiper-slide"><img src="images/main-page/car-marks/сhevrolet.png" alt=""></div>
-     
-    
-   </div>
-   <!-- If we need pagination -->
-   <div class="swiper-pagination"></div>
+<span>Доступність.</span> CARSAFE розташований у Вінниці. А з мешканцями будь-якого іншого міста України ми контактуємо за допомогою служби Нова пошта, приймаючи в ремонт будь-які елементи системи безпеки SRS та пересилаючи їх назад у найкоротші терміни.</p><br>
  
-   <!-- If we need navigation buttons -->
-   <!-- <div class="swiper-button-prev"></div>
-   <div class="swiper-button-next"></div> -->
+<p><span>Широкий асортимент послуг.</span> Компанія CARSAFE здійснює такі види ремонту: <br><br>
+
+<span>Відновлення системи SRS</span><br><br>
  
-   <!-- If we need scrollbar -->
-   <!-- <div class="swiper-scrollbar"></div> -->
- </div>
-      </section>
-         
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<i class="bi bi-caret-right-fill"></i>Ремонт усіх видів подушок безпеки Airbag – заміна піропатронів та укладання оболонок з дотриманням спеціальних технологій.<br>
+<i class="bi bi-caret-right-fill"></i>Прошивка блоку керування, видалення аварійних даних crash-data. <br>
+<i class="bi bi-caret-right-fill"></i>Комплексний ремонт ременів безпеки, повернення їх після ДТП у робочий стан.<br>
+<i class="bi bi-caret-right-fill"></i>Встановлення нових кришок для Airbag та накладки керма або їх повна реставрація.<br>
+<i class="bi bi-caret-right-fill"></i>Ремонт торпедо та сидінь після спрацювання подушки безпеки.</p><br>
+ 
+<p><span>Перетяжка деталей салону</span><br><br>
+Ми можемо перетягнути весь салон вашого авто або його деталі будь-яким вибраним матеріалом. З однаково високою майстерністю ми виконуємо:
+ 
+<ul>
+   <li>Перетяжку керма</li>
+   <li>Сидінь</li>
+   <li>Стелі</li>
+   <li>Дверних карт</li>
+   <li>Панелі приладів</li>
+   <li>Підлокітника</li>
+   <li>Ручки коробки передач.</li>
+</ul>
 
-   <script>
-      const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  slidesPerView: 6,
-               spaceBetween: 5,
-           breakpoints: {
-                  // when window width is >= 320px
-                  200: {
-                     slidesPerView: 1,
-                     spaceBetween: 10,
-                  },
-                  350: {
-                     slidesPerView: 1,
-                     spaceBetween: 10,
-                  },
-                  400: {
-                     slidesPerView: 3,
-                     spaceBetween: 40,
-                  },
-                  650: {
-                     slidesPerView: 4,
-                     spaceBetween: 20,
-                  },
-                  850: {
-                     slidesPerView: 5,
-                     spaceBetween: 40,
-                  },
-                  // when window width is >= 480px
-                  1000: {
-                     slidesPerView: 6,
-                     spaceBetween: 40
-                  },
-                  1200: {
-                     slidesPerView: 6,
-                     spaceBetween: 70
-                  },
-                  1400: {
-                     slidesPerView: 6,
-                     spaceBetween: 110
-                  },
-
-               }, 
-  autoplay: {
-   delay: 1500,
-   disableOnInteraction: false,
-  },
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-});
-   </script>
-
-         <section class="main__bottom">
-            
-               <img src="images/main-page/12.jpg" alt="">
-               <div class="main__bottom--sub">
-                  <h1>Доставка авто з аукціонів США та Канади</h1>
-               </div>
-           
+ </p><br>
+ 
+<p><span>Матеріали та запчастини.</span> Вам нічого не потрібно купувати окремо – всі види найкращих сучасних матеріалів відмінної якості є у наявності, і ви можете вибрати їх, отримавши консультацію щодо їх характеристик від фахівців. Все необхідне для ремонту системи безпеки SRS також завжди є – оригінальні піропатрони, кришки керма та подушок безпеки, інструменти та матеріали для їх монтажу.</p><br>
+ 
+<p><span>Якість.</span> Ремонт проводиться тільки повністю «під ключ», з дотриманням усіх заводських стандартів та технологій, і ми обов'язково надаємо офіційну гарантію на всі виконані роботи.</p><br>
+ 
+<p><span>Тривалість.</span> Робота може зайняти час від 1 години максимум до 1 тижня – все залежатиме від об'єму та складності ремонту.</p><br>
+ 
+<p><span>Ціна.</span> Ціни встановлюються індивідуально, вони розраховуються в залежності від обраного вами матеріалу для перетягування деталей салону або складності ремонту елементів системи SRS. Ціна обов'язково визначається та повідомляється вам до початку робіт, і ви можете не побоюватися, що наприкінці отримаєте завищений рахунок.
+Сервісний центр CARSAFE піклується про свою репутацію, а також про вашу зручність та безпеку, і тому, звертаючись до нас, ви завжди будете у виграші.</p><br>
          </section>
-      </div>
+
+
+      
+
+   </section>
    </main>
    <footer>
       <section class="footer__wrap">
@@ -330,7 +209,7 @@
                   <p>+380963630876</p>
                   <a href="viber://add?number=380963630876"><i class="fa-brands fa-viber"></i></a>
                   <a href="https://t.me/+380963630876"><i class="fa-brands fa-telegram"></i></a>
-                  <a href="https://www.instagram.com/koliakashchenko?igsh=MWFybmdkbnB6bGszdw=="><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
                </div>
             </div>
          </div>
@@ -388,38 +267,10 @@
    let cart = document.getElementById("menuCart");
    let total = document.querySelector(".total")
    let catalog = [...recomendProd]
-   //console.log(cart)
-//let shop = document.querySelector(".descript__buy--wrap");
+
 let basket = JSON.parse(localStorage.getItem("airbag-data")) || [];
 
-let generateShop = () => {
-   return (shop.innerHTML = recomendProd.map((x) => {
-      let {id, name, price, descriptLink, img, alt } = x;
-      let search = basket.find((x) => x.id === id) || []; 
-      
-      return `
-         
-      <div id="product-id-${id}" class="recomendations__products--about">
 
-         <figure>
-            <img src="${img}" alt="">
-         </figure>
-         <p>${name}</p>
-         <h3 class="price">${price}грн</h3>
-         <button onclick="increment(${id}); openCart()">Купити <i class="bi bi-cart-plus"></i></button>
-
-         <div id=${id} class="quantity">
-            ${search.item === undefined ? 0 : search.item}
-         </div>
-     
-      </div>
-
-      `;
-   }).join(""));
-
-}
-
-generateShop();
 
 
  let increment = (id) => {
