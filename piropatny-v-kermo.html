@@ -5,7 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="canonical" href="">
    <link rel="alternate" href="" hreflang="uk">
-   <link rel="icon" href="images/logo/page-icon.png" type="image/x-icon">
+   <link rel="icon" href="images/logo/logo-edited.jpg" type="image/x-icon">
    <title>Придбати піропатрони у м. Вінниця за доступною ціною | Інтернет-магазин піропатронів - CARSAFE</title>
    <meta name="description" content="Придбати піропатрон (газогенератор) ✔️Кращі ціни ✔️Широкий вибір ✔️Гарантія якості ✔️Доставка по Україні ➔Заходьте!">
    <meta property="og:description" content="Придбати піропатрон (газогенератор) ✔️Кращі ціни ✔️Широкий вибір ✔️Гарантія якості ✔️Доставка по Україні ➔Заходьте!">
@@ -15,6 +15,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
    <script defer src="script/main.js"></script>
+   <script defer src="script/cart-menu.js"></script>
 </head>
 <body>
    <header class="header__top">
@@ -59,7 +60,7 @@
                   <a href="autopidbir-usa.html"><li>Замовити автомобіль зі США</li></a>
                   <a href="autopidbir-ukraine.html"><li>Вибрати авто по Україні</li></a>
                   <a href="remont-airbag.html"><li>Послуги по відновленню авто</li></a>
-                  <li class="social__media"><a href="viber://add?number=380963630876"><i class="fa-brands fa-viber"></i></a><a href="https://t.me/+380963630876"><i class="fa-brands fa-telegram"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li class="social__media"><a href="viber://add?number=380963630876"><i class="fa-brands fa-viber"></i></a><a href="https://t.me/+380963630876"><i class="fa-brands fa-telegram"></i></a><a href="https://www.instagram.com/koliakashchenko?igsh=MWFybmdkbnB6bGszdw=="><i class="fa-brands fa-instagram"></i></a></li>
                   <li class="tel"><i class="fa-solid fa-phone-volume"></i> +380963630876</li>
                   <li class="email"><i class="fa-regular fa-envelope"></i> carsafe-ua@gmail.com</li>
                </ul>
@@ -152,7 +153,7 @@
          <div class="main__banner" style="height: 300px;">
             <img src="images/main-page/replacement-steering-wheels_0.jpg" alt="">
             <div class="main__banner--sub">
-               <h1 style="font-size: 2rem;">Піропатрони в кермо</h1>
+               <h1 style="font-size: 2rem;" >Піропатрони в кермо</h1>
             </div>
          </div>
         <!--  -->
@@ -242,14 +243,14 @@
 <script>
    let shop = document.querySelector(".recomendations__products");
    let cart = document.getElementById("menuCart");
-   let total = document.querySelector(".total")
-   let catalog = [...recomendProd]
+   let total = document.querySelector(".total");
+   let catalog = [...recomendProd, ...piroVKermo, ...piroVTorpedo, ...piroVremeni, ...piroVsydinnia, ...piroKolin, ...piroStelia, ...accessories];
    //console.log(cart)
 //let shop = document.querySelector(".descript__buy--wrap");
 let basket = JSON.parse(localStorage.getItem("airbag-data")) || [];
 
 let generateShop = () => {
-   return (shop.innerHTML = recomendProd.map((x) => {
+   return (shop.innerHTML = piroVKermo.map((x) => {
       let {id, name, price, descriptLink, img, alt } = x;
       let search = basket.find((x) => x.id === id) || []; 
       

@@ -5,7 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="canonical" href="">
    <link rel="alternate" href="" hreflang="uk">
-   <link rel="icon" href="images/logo/page-icon.png" type="image/x-icon">
+   <link rel="icon" href="images/logo/logo-edited.jpg" type="image/x-icon">
    <title>Придбати піропатрони у м. Вінниця за доступною ціною | Інтернет-магазин піропатронів - CARSAFE</title>
    <meta name="description" content="Придбати піропатрон (газогенератор) ✔️Кращі ціни ✔️Широкий вибір ✔️Гарантія якості ✔️Доставка по Україні ➔Заходьте!">
    <meta property="og:description" content="Придбати піропатрон (газогенератор) ✔️Кращі ціни ✔️Широкий вибір ✔️Гарантія якості ✔️Доставка по Україні ➔Заходьте!">
@@ -15,7 +15,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
    <script defer src="script/main.js"></script>
-   <script defer src="script/faq.js"></script>
+   <script defer src="script/cart.js"></script>
 </head>
 <body>
    <header class="header__top">
@@ -60,7 +60,7 @@
                   <a href="autopidbir-usa.html"><li>Замовити автомобіль зі США</li></a>
                   <a href="autopidbir-ukraine.html"><li>Вибрати авто по Україні</li></a>
                   <a href="remont-airbag.html"><li>Послуги по відновленню авто</li></a>
-                  <li class="social__media"><a href="viber://add?number=380963630876"><i class="fa-brands fa-viber"></i></a><a href="https://t.me/+380963630876"><i class="fa-brands fa-telegram"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li class="social__media"><a href="viber://add?number=380963630876"><i class="fa-brands fa-viber"></i></a><a href="https://t.me/+380963630876"><i class="fa-brands fa-telegram"></i></a><a href="https://www.instagram.com/koliakashchenko?igsh=MWFybmdkbnB6bGszdw=="><i class="fa-brands fa-instagram"></i></a></li>
                   <li class="tel"><i class="fa-solid fa-phone-volume"></i> +380963630876</li>
                   <li class="email"><i class="fa-regular fa-envelope"></i> carsafe-ua@gmail.com</li>
                </ul>
@@ -106,7 +106,7 @@
       </section>
    </header>
 
-   <main>
+   <main style="min-height: 50vh;">
       <section class="viber">
          <div class="viber__wrap">
             <a href="viber://add?number=380963630876">
@@ -137,7 +137,40 @@
             </div>
         </section>
 
+
        
+   <section class="incart">
+      <div class="shoppingcart__wrap">
+          <div class="shopping-cart" id="shopping-cart"></div>
+          <section id="username" class="user__name">
+              <h1>Покупець</h1>
+              <form id="form-id" action="https://formsubmit.co/carsafe.ua@gamil.com" method="POST">
+              <!-- <form id="form-id" action="https://formspree.io/f/mpzvlwba" method="POST"> -->
+                  <input type="name" name="Ім'я" placeholder="Ім'я" required>
+                  <input type="lastname" name="Прізвище" placeholder="Прізвище" required>
+                  <input type="tel" name="Телефон" placeholder="Телефон" required>
+                  
+                  <input type="email" name="email" placeholder="Електронна пошта" required>
+                  <input type="city" name="Місто" placeholder="Місто" required>
+                  <input type="district" name="Область" placeholder="Область" required>
+                  <input type="district" name="Район" placeholder="Район" required>
+                  <input type="text" name="NovaPost" placeholder="Нова Пошта №" required>
+                  <input class="user__name--buyer" type="text" name="user-comment" placeholder="Примітка покупця">
+                  <!-- <textarea class="user__name--buyer" name="productname" placeholder="Примітка покупця"></textarea> -->
+                  
+                  
+                  <textarea class="user__name--textarea" name="Замовлення" id="products" cols="30" rows="10"></textarea>
+                  <!-- <p id="products"></p> -->
+                  <input type="hidden" name="_next" value="http://127.0.0.1:5500/thank-you.html">
+                  <button class="user__name--submit" id="send-submit" type="submit">Send</button>
+              </form>
+          </section>
+          
+      </div>
+          
+     
+          <aside id="label" class="cart__aside"></aside>
+      </section>
 
 
       
@@ -211,77 +244,5 @@
 </body>
 <script src="script/airbag-products.js"></script>
 
-<script>
-   let shop = document.querySelector(".recomendations__products");
-   let cart = document.getElementById("menuCart");
-   let total = document.querySelector(".total")
-   let catalog = [...recomendProd]
 
-let basket = JSON.parse(localStorage.getItem("airbag-data")) || [];
-
-
-
-
- let increment = (id) => {
-   let selectedItem = id;
-   let search = basket.find((x) => x.id === selectedItem.id);
-
-   if (search === undefined) {
-      basket.push({
-         id: selectedItem.id,
-         item: 1,
-      });
-   } else {
-      search.item += 1;
-   }
-   generateCart();
-   update(selectedItem.id);
-   basket = basket.filter((x) => x.item !== 0);
-   localStorage.setItem("airbag-data", JSON.stringify(basket));
-};
-
-let decrement = (id) => {
-   let selectedItem = id;
-   let search = basket.find((x) => x.id === selectedItem.id);
-
-   if (search === undefined) return;
-   else if (search.item === 0) return;
-   else {
-      search.item -= 1;
-   }
-   update(selectedItem.id)
-   basket = basket.filter((x) => x.item !== 0);
-   //generateShop();
-   generateCart();
-   localStorage.setItem("airbag-data", JSON.stringify(basket));
-}
-
-let update = (id) => {
-   let search = basket.find((x) => x.id === id);
-   document.getElementById(id).innerHTML = search.item;
-   //generateCart();
-   calculation();
-   TotalAmount();
-}
-
-let removeItem = (id) => {
-   let selectedItem = id;
-   basket = basket.filter((x) => x.id !== selectedItem.id);
-   generateCart();
-   TotalAmount();
-   calculation();
-   //order()
-   localStorage.setItem("airbag-data", JSON.stringify(basket));
-}
-
-
-
-
-let calculation = () => {
-   let cartIcon = document.getElementById("cartAmount");
-   cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0);
- };
- 
- calculation();
-</script>
 </html>

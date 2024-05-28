@@ -5,7 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="canonical" href="">
    <link rel="alternate" href="" hreflang="uk">
-   <link rel="icon" href="images/logo/page-icon.png" type="image/x-icon">
+   <link rel="icon" href="images/logo/logo-edited.jpg" type="image/x-icon">
    <title>Придбати піропатрони у м. Вінниця за доступною ціною | Інтернет-магазин піропатронів - CARSAFE</title>
    <meta name="description" content="Придбати піропатрон (газогенератор) ✔️Кращі ціни ✔️Широкий вибір ✔️Гарантія якості ✔️Доставка по Україні ➔Заходьте!">
    <meta property="og:description" content="Придбати піропатрон (газогенератор) ✔️Кращі ціни ✔️Широкий вибір ✔️Гарантія якості ✔️Доставка по Україні ➔Заходьте!">
@@ -15,6 +15,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
    <script defer src="script/main.js"></script>
+   <script defer src="script/cart-menu.js"></script>
 </head>
 <body>
    <header class="header__top">
@@ -309,9 +310,9 @@
          <section class="main__bottom">
             
                <img src="images/main-page/12.jpg" alt="">
-               <div class="main__bottom--sub">
+               <a href="autopidbir-usa.html"><div class="main__bottom--sub">
                   <h1>Доставка авто з аукціонів США та Канади</h1>
-               </div>
+               </div></a>
            
          </section>
       </div>
@@ -382,15 +383,25 @@
    </footer>
 </body>
 <script src="script/airbag-products.js"></script>
+<!-- <script defer src="script/cart-menu.js"></script> -->
 
 <script>
    let shop = document.querySelector(".recomendations__products");
    let cart = document.getElementById("menuCart");
-   let total = document.querySelector(".total")
-   let catalog = [...recomendProd]
+   let total = document.querySelector(".total");
+   let catalog = [...recomendProd, ...piroVKermo, ...piroVTorpedo, ...piroVremeni, ...piroVsydinnia, ...piroKolin, ...piroStelia, ...accessories]
    //console.log(cart)
-//let shop = document.querySelector(".descript__buy--wrap");
-let basket = JSON.parse(localStorage.getItem("airbag-data")) || [];
+   //let shop = document.querySelector(".descript__buy--wrap");
+   let basket = JSON.parse(localStorage.getItem("airbag-data")) || [];
+
+   
+   let calculation = () => {
+   let cartIcon = document.getElementById("cartAmount");
+   cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0);
+ };
+ 
+ calculation();
+
 
 let generateShop = () => {
    return (shop.innerHTML = recomendProd.map((x) => {
@@ -477,11 +488,6 @@ let removeItem = (id) => {
 
 
 
-let calculation = () => {
-   let cartIcon = document.getElementById("cartAmount");
-   cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0);
- };
- 
- calculation();
+
 </script>
 </html>
