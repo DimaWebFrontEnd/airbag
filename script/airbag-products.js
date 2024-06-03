@@ -32,6 +32,13 @@ let recomendProd = [
 /* Піропатрони в кермо */
 let piroVKermo = [
    {
+      id: "pirVkermoCover",
+      img: "images/main-page/v-kermo/wheel-cover-edited.jpg",  
+      name: "Кришки керма: Toyota, Renault, Volkswagen, Skoda, Kia, Ford, Hyundai, Nissan, Bmw, Mazda та інші.", //  Mercedes, Suzuki, Audi, Peugeot, Chevrolet, Lexus, Mitsubishi та інші.",
+      alt: "Піропатрон у кермо",
+      price: 1350
+   },
+   {
       id: "pirVkermo1",
       img: "images/main-page/v-kermo/20210513_15134300x300.jpg",  //replace img
       name: "<span>Піропатрон у кермо WH-28A (верх ⬆Ø 59) (низ↓Ø62) (висота.⇅35) (між. болт. 60)<span>",
@@ -733,6 +740,13 @@ let piroKolin = [
 /* Піропатрони стеля */
 
 let piroStelia = [
+   {
+      id: "pirSteliaVag",
+      img: "images/main-page/stelia/photo-edited.png",
+      name: "Діаметр ⬆Ø 30, довжина 30, 35, 37",
+      alt: "Піропатрон стеля",
+      price: 1450
+   },
    {
       id: "pirStelia1",
       img: "images/main-page/v-sydinnia/c.p2rG_AWeDc.webp",
