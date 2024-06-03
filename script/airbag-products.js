@@ -743,7 +743,7 @@ let piroStelia = [
    {
       id: "pirSteliaVag",
       img: "images/main-page/stelia/photo-edited.png",
-      name: "Діаметр ⬆Ø 30, довжина 30, 35, 37",
+      name: "Піропатрони Vag, діаметр ⬆Ø 30, довжина 30, 35, 37, боковий вистріл",
       alt: "Піропатрон стеля",
       price: 1450
    },
