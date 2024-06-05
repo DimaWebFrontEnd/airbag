@@ -445,6 +445,20 @@ let piroVTorpedo = [
 ]
 
 let piroVremeni = [
+     {
+      id: "pirVSyd14",
+      img: "images/main-page/v-sydinnia/photo_2024-06-05_17-50-56.jpg", 
+      name: "Піропатрон пулька оригінал",
+      alt: "Піропатрон у сидіння",
+      price: 160
+   },
+   {
+      id: "pirVSyd15",
+      img: "images/main-page/v-sydinnia/photo_2024-06.jpg", 
+      name: "Піропатрон пулька оригінал",
+      alt: "Піропатрон у сидіння",
+      price: 200
+   },
    {
       id: "pirVRemeni1",
       img: "images/main-page/v-remeni/photo_2022-01-05_11-22-58-300x300.jpg", 
