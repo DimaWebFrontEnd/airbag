@@ -1591,9 +1591,9 @@ footer .footer__wrap--left {
     margin-bottom: 40px;
   }
 }
-footer .footer__wrap--left h1 {
+/* footer .footer__wrap--left h1 {
   text-align: center;
-}
+} */
 footer .footer__wrap--left img {
   width: 100%;
   height: auto;
